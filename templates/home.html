@@ -41,15 +41,11 @@ There are many variations of passages of Lorem Ipsum available, but the majority
  
 
     <h2 class="text-center">Open Positions</h2>
-    <p class="text-center">
       <div>
         {% for job in jobs %}
-          <div>
-            {{jobs['title']}}
-          </div>
-        {% end for %}
+          {% include 'joblisting.html' %}
+        {% endfor %}
       </div>
-    </p>
  
 
       <div class="text-center">
