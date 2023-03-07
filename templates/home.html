@@ -15,22 +15,31 @@
   
 </head>
 <body>
+
+  {% include 'nav.html' %}
+
+  <h1 class="text-center">
+      {{company_name}} Careers. 
+    </h1>
+  
+  <img class="img-responsive" id="madison" src="https://bhucee-website.bhucee.repl.co/static/madison-pic.jpeg" height="360" >
   
   <div class ="container">
-    <h1 class="text-center">
-      {{company_name}} Careers. 
-    </h1>=
+    
   
-
-  <div class="center-block">
-    <img class="img-responsive" id="madison" src="https://bhucee-website.bhucee.repl.co/static/madison-pic.jpeg" height="360" >
-  </div>
 
 
     <h2 class="text-center">What Is Lorem Ipsum?</h2>
+    <div class="row">
+      <div class="col-6">
     <p class="lead">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
     </p>
+      </div>
+        <div class="col-6">
+          <img src="static/people-work.jpeg style="height:360px border-radius:4px;">
+        </div>
+    </div>
  
 
  
@@ -49,11 +58,12 @@ There are many variations of passages of Lorem Ipsum available, but the majority
  
 
       <div class="text-center">
-       <button <button class="btn btn-primary btn-lg" type="submit">Button</button>
+       <a href="mailto:info@iowa-solutions.com?subject=Questions%20About%20{{company_name}}&body=My%20Name%3A%20%3CEnter%20your%20name%3E%0D%0A%0D%0AMy%20Resume%20link%3A%20%3CEnter%20Here%3E%0D%0A%0D%0AMy%20LinkedIn%20link%3A%20%3CEnter%20Here%3E" <button class="btn btn-primary btn-lg" type="submit">Contact</a>
       </div>
     <p class="mt-4" style = "text-align: center">Copyright, 2023. Bhucee</p>
   </div>
 
+  {% include 'footer.html' %}
     
 </body>
 </html>
